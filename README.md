@@ -1,14 +1,15 @@
 # ChatLangChain
 
-This repo is an implementation of a chatbot specifically focused on question answering over the [LangChain documentation](https://langchain.readthedocs.io/en/latest/).
+- This repo is my personal implementation of Langchain's sample implementation of a chatbot on their training documents. 
+- Originally, this was an implementation of a chatbot specifically focused on question answering over the [LangChain documentation](https://langchain.readthedocs.io/en/latest/).
 
-## 🚀 Important Links
+## 🥅 Goals:
+- Make this work over a few other documentaitons 
+- Set this up to work over a text corpus that I manually create
 
-Website: [chat.langchain.dev](https://chat.langchain.dev)
-
-Hugging Face Space: [huggingface.co/spaces/hwchase17/chat-langchain](https://huggingface.co/spaces/hwchase17/chat-langchain)
-
-Blog Post: [blog.langchain.dev/langchain-chat/](https://blog.langchain.dev/langchain-chat/)
+## 🧰 Tools 
+1. Weaviate: Vector database 
+2. OpenAI: Embeddings 
 
 ## 📚 Technical description
 
@@ -26,7 +27,3 @@ Question-Answering has the following steps:
 1. Given the chat history and new user input, determine what a standalone question would be (using GPT-3).
 2. Given that standalone question, look up relevant documents from the vectorstore.
 3. Pass the standalone question and relevant documents to GPT-3 to generate a final answer.
-
-## 🧠 How to Extend to your documentation?
-
-Coming soon.
